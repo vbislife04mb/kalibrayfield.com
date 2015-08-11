@@ -20,43 +20,66 @@
 </head>
 
 <body>
-<div class="grid-container">
-
-	<div class="head section">
-		<div class="head-text">
-			<h1>Kali Brayfield</h1>
-			<h3>Front End Developer</h3>
-		</div>
-		<ul class="social-icons">
-			<li><a href="https://wwww.twitter.com/kbray4" id="twitter"><img src="img/twitter.svg"></a></li>
-			<li><a href="https://www.linkedin.com/profile/view?id=327734561&trk=spm_pic" id="linkedin"><img src="img/linkedin.svg"></a></li>		<li><a href="https://www.linkedin.com/profile/view?id=327734561&trk=spm_pic" id="facebook"><img src="img/facebook.svg"></a></li>
+<header>
+	<nav class="grid-container">
+		<a class="main-logo" href="#"><img src="img/logo-circle-pink.svg"></a>
+		<ul class="grid-7 main-nav">
+			<li><a href="/"></a><h3>About Me</h3></li>
+			<li><a href="/"></a><h3>Projects</h3></li>
+			<li><a href="/"></a><h3>Resume</h3></li>
+			<li><a href="/"></a><h3>Contact</h3></li>
+		</ul>
+	</nav>	
+	<div class="grid-container main-head">
+		<h1 class="grid-12">Kali Brayfield</h1>
+		<h4 class="grid-12">Front End Developer</h4>
+		<ul class="grid-12 social-icons">
+			<li class="grid-1"><a href="https://wwww.twitter.com/kbray4" id="twitter"><img src="img/twitter-pink.svg"></a></li>
+			<li class="grid-1"><a href="https://www.linkedin.com/profile/view?id=327734561&trk=spm_pic" id="linkedin"><img src="img/linkedin-pink.svg"></a></li>
+			<li class="grid-1"><a href="https://www.linkedin.com/profile/view?id=327734561&trk=spm_pic" id="facebook"><img src="img/facebook-pink.svg"></a></li>
 		</ul>
 	</div>
+</header>	
+
 
 
 
 	<!-- ABOUT ME -->
 
-		<div class="about section">	
-			<img src="img/me.png" alt="This is a photo of me.">
-			<h2>About Me</h2>
-			<p class="lead">I am a Front End Developer. I am passionate about making great user experiances and responsive sites. <br>
-			When I'm not in front of a computer you will find me playing, coaching or reffing volleyball. I love watching sports, campfires, and hanging out at the lake.</p>
+		<div class="grid-container about section">
+			<div class="grid-5">
+					<img src="img/me.png" alt="This is a photo of me.">
+			</div>
+			<div class="grid-7">
+				<h2>About Me</h2>
+				<p>Hello! My name is Kali Brayfield and I am a Front-End Developer from Omaha, Nebraska. I am passionate about making beauiful responsive websites that make great user experiances.
+				I have been a graphic designer for 5 years and a freelance Front-End Developer for 2 years. <br><br>
+				When I'm not working, you will find me playing, coaching or officiating volleyball. I love to play and share my love for the game with the girls I coach.</p>
+			</div>
 		</div>
 
 
 
-
 	<!-- /projects -->
-		<ul class="projects section">
-			<li class="grid-2"><a href="sign-up-product.html"><img src="img/sign-up-form@2x.jpg" alt="This is a sign up form."></a><h3>Sign-up form</h3></li>
-			<li class="grid-2"><a href="email-product.html"><img src="img/email-newsletter@2x.jpg" alt="This is an email newsletter."></a></li>
-			<li class="grid-2"><img src="img/fitness-app-design@2x.jpg" alt="This is a sign up form."></li>
-		</ul>
-	
+	<div class="grid-container section" id="imageGallery">
+		<h2>Projects</h2>
+		<div class="grid-4">
+			<a href="sign-up-form.html">
+				<img src="img/sign-up-form@2x.jpg" alt="Sign up form.">
+			</a>
+		</div>
+		<div class="grid-4">
+			<img src="img/email-newsletter@2x.jpg" alt="Email newsletter.">
+		</div>
+		<div class="grid-4">
+			<img src="img/fitness-app-design@2x.jpg" alt="Fitness App.">
+		</div>
+		<div class="grid-4">
+			<img src="img/jayzcafe.jpg" alt="This is a sign up form.">
+		</div>
+	</div>
 
-
-
+	<!-- <div class="grid-container">
 
 		
 					<h2 class="section-heading">Website Design & Developement</h2>
@@ -67,13 +90,7 @@
 					<br>
 					<a target="_blank" href="http://www.jayzcafe.com/">Visit their site</a> or stop in for some delicious food and coffee.</p>
 					<h3>My role on this project</h3>
-					<p class="lead">Sketch, Front End Design, HTML and CSS</p>
-				</div>
-				<div class="col-lg-5 col-lg-offset-2 col-sm-6">
-					<img class="img-responsive" src="img/jayz-desktop.png" alt="">
-				</div>
-			</div>
-		</div>
+					<p class="lead">Sketch, Front End Design, HTML 
 	</div>
 
 	<div class="divider"></div>
@@ -215,9 +232,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
-	
+
 	<footer>
 		<h3>Let's chat!</h3>
 
@@ -234,7 +251,6 @@
 
 	<!-- JavaScript -->
 	<script src="js/jquery-1.11.1.js"></script>
-</div>
 </body>
 
 </html>

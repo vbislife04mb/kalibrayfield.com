@@ -1,17 +1,19 @@
 body {
   background: #384047;
-  font-family: sans-serif;
-  font-size: 10px
+  
 }
 form {
   background: #fff;
+  font-family: sans-serif;
+  font-size: 10px;
   padding: 4em 4em 2em;
   max-width: 400px;
-  margin: 100px auto 0;
+  margin: 50px auto 0;
   box-shadow: 0 0 1em #222;
   border-radius: 5px;
 }
 p {
+  text-align: left;
   margin: 0 0 3em 0;
   position: relative;
 }
@@ -80,5 +82,4 @@ input[type="submit"] {
   outline: none;
   padding: .8em 0;
   text-shadow: 0 1px #68B25B;
-
 }

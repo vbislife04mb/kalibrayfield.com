@@ -1,0 +1,148 @@
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;
+	width: 100%;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+a,
+a:visited,
+a:hover {
+	color: #ff0066;
+	text-decoration: none;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+
+
+/*******Project Navigation**********/
+
+.btn{
+		color: #ff0066;
+		border-radius: 5px;
+		border: 2px solid #ff0066;
+		padding: 5px;
+	.btn:hover {
+		background: #ff0066;
+		color: white;
+	}
+}
+.btn-call {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #ff0066;
+	border-radius: 5px;
+	border: 2px solid #ff0066;
+	padding: 10px;
+	margin-bottom: 40px;
+}
+.btn-close {
+	display: block;
+	font-size: 1.25em;
+	margin-left: auto;
+	margin-right: 20px;
+	margin-top: 20px;
+	width: 50px;
+	color: white;
+	border-radius: 5px;
+	border: 2px solid white;
+	padding: 10px;
+	margin-bottom: 40px;
+	a {
+		color: white;
+	}
+}
+.main-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 55px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: white;
+}
+.main-logo {
+	display: inline-block;
+	float: left;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.main-logo a, 
+.main-nav a {
+	text-align: center;
+}
+.main-nav {
+		float: right;
+		display: inline-block;
+		text-align: right;
+	li {
+		text-align: right;
+		margin-left: 10px;
+		display: inline-block;
+	}
+}
+
+.main-content {
+		margin-top: 60px;
+	p {
+		text-align: left;
+	}
+}
+.space {
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) { 
+
+	/* Main Layout Styles
+	================================ */
+
+	/*body {
+		padding-top: 75px;
+	}*/
+	/*.main-header {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	.main-nav {
+		text-align: right;
+	}
+	.main-nav li {
+		margin-top: 6px;
+		margin-left: 10px;
+		display: inline-block;
+	}
+	.main-banner {
+		background: #dfe2e4;
+		text-align: center;
+		padding: 50px 15px;
+		margin-bottom: 20px;
+	}
+*/
+	/* Imagery
+	================================ */
+
+	
+
+}

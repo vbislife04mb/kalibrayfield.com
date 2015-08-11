@@ -1,140 +1,128 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body {
-	padding: 0;
-	margin-left: 0;
-	margin-right: 0;
-	text-align: center;
-	width: 100%;
-}
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  width: 100%;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+
 a,
 a:visited,
 a:hover {
-	color: #ff0066;
-}
+  color: #ff0066;
+  text-decoration: none; }
 
 body, h1, h2, h3, h4, h5, h6 {
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 700;
-}
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px; }
+
+h1 {
+  font-size: 2.5em; }
 
 h2 {
-	font-size: 2em;
-	color: #ff0066;
-}
+  font-size: 2em;
+  color: #ff0066; }
+
+h3 {
+  font-size: 1.5em; }
+
 .section {
-	padding: 20px 20px;
-}
-.head {
-	background-color: purple;
-	padding: 150px 0;
-	/*background: url(img/headerbackground.jpg) no-repeat center center fixed;*/
-}
-.head-text {
-	font-size: 1.5em;
-}
-.social-icons li{
-	display: inline-block;
-	padding: 0 10px;
-}
-.social-icons::hover {
-	background: #ff0066;
-}
+  padding-bottom: 60px; }
+
+header {
+  padding: 180px 0px;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/headerbackground.jpg) no-repeat center center;
+  background-size: cover; }
+  header nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    opacity: .9; }
+  header h1 {
+    margin-bottom: 0px; }
+  header h3 {
+    font-size: 1.125em;
+    color: #FF0066;
+    margin-bottom: 2px; }
+  header h4 {
+    font-size: 1.5em;
+    color: #ff0066;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+
+.main-logo {
+  margin: 0 auto; }
+  .main-logo img {
+    margin-top: 5px;
+    width: 50px; }
+
+.main-nav {
+  margin-top: 0px; }
+  .main-nav li {
+    display: inline-block;
+    margin-right: 15px; }
+  .main-nav li:nth-child(4) {
+    margin-right: 0px; }
+  .main-nav a:hover {
+    border-bottom: 2px #ff0066; }
+
+.social-icons {
+  text-align: center; }
+  .social-icons li {
+    display: inline-block;
+    padding: 0 10px; }
+
+.about {
+  padding-top: 60px; }
+  .about p {
+    text-align: left; }
+
 .about img,
 .projects img {
-	border-radius: 20px;
-}
-.projects li{
-	padding-bottom: 10px;
-}
+  border-radius: 20px; }
 
+.projects li {
+  padding-bottom: 10px; }
 
-/*.background-img {
-	width: 100%;	
-}
+@media (min-width: 768px) {
+  /* Navigation
+  ================================ */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: white;
+    opacity: .9; }
+    nav h1 {
+      margin-bottom: 10px; }
+    nav h3 {
+      color: #FF0066; }
 
-.lead {
-	font-size: 1.25em;
-	font-weight: 400;
-}
+  .main-logo {
+    margin-right: auto; }
+    .main-logo img {
+      margin-top: 5px;
+      width: 50px; }
 
-.intro-header {
-	width: 100%;
-	margin: auto;
-	padding-top: 50px;
-	color: #f8f8f8;
-	
-	text-align: center;
-}
-.divider {
-	border-bottom: 1px solid gray;
-}
+  .main-nav {
+    display: inline-block;
+    float: right; }
+    .main-nav li {
+      text-align: right;
+      margin-left: 10px;
+      display: inline-block; }
 
-.intro-message {
-	padding-top: 15%;
-	margin: auto;
-}
+  /* Main Layout Styles
+  ================================ */
+  /* Imagery
+  ================================ */ }
 
-.intro-message span {
-	padding: 50px;
-}
-
-
-.intro-divider {
-	width: 325px;
-}
-.skills-content img {
-	text-align: center;
-	display: inline;
-	width: 20%;
-}
-.content-section-a {
-	background-color: #f8f8f8;
-	padding: 40px 0;
-}
-
-.content-section-b {
-	padding: 40px 0;
-}
-
-.section-heading {
-	margin-bottom: 30px;
-}
-.right-side {
-	float: right;
-	margin-left: 50px;
-}
-
-#about {
-	padding-top: 80px;
-}
-
-footer {
-	text-align: center;
-	background-color: #3d3d3d;
-	padding: 50px 0;
-	margin: auto;
-	margin-bottom: -202px;
-}
-footer h3 {
-	color: #fff;
-	padding-bottom: 30px;
-}
-
-.contact img,
-.contact a{
-	display: inline-block;
-	padding-right: 15px;
-	margin-bottom: 15px;
-	text-decoration: none;
-}
-
-p.copyright {
-	margin: 15px 0 0;
-}
-
-@media (max-width: 1199px) {
-	
-
-@media (max-width: 767px) {
-	
-
-*/
+/*# sourceMappingURL=style.css.map */
