@@ -49,6 +49,31 @@ header {
 		background: white;
 		opacity: .9;
 	}
+}
+
+.main-logo {
+		display: block;
+		margin: 0;
+	img {
+		margin-top: 5px;
+		width: 50px;
+	}
+}
+.main-nav {
+		margin: 0;
+		padding: 0;
+	li {
+		display: inline-block;
+		margin: 8px;
+	}
+	h3 {
+		font-size: 1.125em;
+		margin: 0;
+	}
+}
+
+.main-head {
+
 	h1{
 		margin-bottom: 0px;
 	}
@@ -60,37 +85,20 @@ header {
 	h4 {
 		font-size: 1.5em;
 		color: #ff0066;
-		margin-top: 10px;
-		margin-bottom: 20px;
-	}
-}
-.main-logo {
-		margin: 0 auto;
-	img {
-		margin-top: 5px;
-		width: 50px;
-	}
-}
-.main-nav {
-		margin-top: 0px;
-	li {
-		display: inline-block;
-		margin-right: 15px;
-	}
-	li:nth-child(4) {
-		margin-right: 0px;
-	}
-	a:hover {
-		border-bottom: 2px #ff0066;
-	}
-}
+		margin: 0;
+		
 
+	}
+}
 .social-icons {
+		margin: 0;
 		text-align: center;
-	li{
+		padding: 0;
+	li {
 		display: inline-block;
 		padding: 0 10px;
 	}
+	
 }
 
 .about {
@@ -113,45 +121,45 @@ header {
 
 @media (min-width: 768px) { 
 
-	/* Navigation
-	================================ */
-nav {
+		/* Navigation
+		================================ */
+		.main-header {
 		position: fixed;
 		top: 0;
 		width: 100%;
-		height: 60px;
+		height: 55px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
 		background: white;
-		opacity: .9;
-	h1 {
-		margin-bottom: 10px;
 	}
-	h3 {
-		color: #FF0066;
-	}
-}
-.main-logo {
-		margin-right: auto;
-	img {
-		margin-top: 5px;
-		width: 50px;
-	}
-}
-.main-nav {
+	.main-logo {
 		display: inline-block;
-		float: right;
-	li {
-		text-align: right;
-		margin-left: 10px;
-		display: inline-block;
+		float: left;
+		margin-top: 0;
+		margin-bottom: 0;
 	}
-}
-	/* Main Layout Styles
-	================================ */
+	.main-logo a, 
+	.main-nav a {
+		text-align: center;
+	}
+	.main-nav {
+			float: right;
+			display: inline-block;
+			text-align: right;
+		li {
+			text-align: right;
+			margin-left: 10px;
+			display: inline-block;
+		}
+	}
 
+	.main-content {
+			margin-top: 60px;
+		p {
+			text-align: left;
+		}
+	}
 	
-	/* Imagery
-	================================ */
-
-	
-
 }
