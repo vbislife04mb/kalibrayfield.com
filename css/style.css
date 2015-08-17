@@ -33,7 +33,7 @@ h3 {
   font-size: 1.5em; }
 
 .section {
-  padding-bottom: 60px; }
+  padding-top: 95px; }
 
 header {
   padding: 180px 0px;
@@ -72,6 +72,8 @@ header {
     margin-right: 0px; }
   .main-nav a:hover {
     border-bottom: 2px #ff0066; }
+  .main-nav h3 {
+    margin-top: 0; }
 
 .social-icons {
   text-align: center; }
@@ -79,10 +81,8 @@ header {
     display: inline-block;
     padding: 0 10px; }
 
-.about {
-  padding-top: 60px; }
-  .about p {
-    text-align: left; }
+.about p {
+  text-align: left; }
 
 .about img,
 .projects img {
