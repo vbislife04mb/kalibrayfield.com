@@ -2,35 +2,34 @@
 <html>
 <head>
 	<title>Sign Up Form</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="../../css/application.css">	
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" title="no title" charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../../css/project.css">	
 </head>
 <body>
-	<div class="grid-container">
-		<div class="grid-1 btn-close"><a href="../../sign-up-form.html">X</a></div>	
+	<div class="btn-close"><a href="../../sign-up-form.html">X</a></div>	
+<div class="grid-container">
+	<div class="grid-10-sm">
+		<form  action="#" method="post">
+			<p>
+				<label for="username">Username</label>
+				<input id="username" name="username" type="text">
+			</p>
+			<p>
+				<label for="password">Password</label>
+				<input id="password" name="password" type="password">
+				<span>Enter a password longer than 8 characters</span>
+			</p>
+			<p>
+				<label for="confirm_password">Confirm Password</label>
+				<input id="confirm_password" name="confirm_password" type="password">
+				<span>Please confirm your password</span>
+			</p>
+			<p>
+				<input type="submit" value="SUBMIT" id="submit">
+			</p>
+		</form>
 	</div>
-
-	<form action="#" method="post">
-		<p>
-			<label for="username">Username</label>
-			<input id="username" name="username" type="text">
-		</p>
-		<p>
-			<label for="password">Password</label>
-			<input id="password" name="password" type="password">
-			<span>Enter a password longer than 8 characters</span>
-		</p>
-		<p>
-			<label for="confirm_password">Confirm Password</label>
-			<input id="confirm_password" name="confirm_password" type="password">
-			<span>Please confirm your password</span>
-		</p>
-		<p>
-			<input type="submit" value="SUBMIT" id="submit">
-		</p>
-	</form>
+</div>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 </body>

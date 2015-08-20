@@ -1,44 +1,55 @@
-* {
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-body {
-	padding: 0;
-	margin-left: 0;
-	margin-right: 0;
-	text-align: center;
-	width: 100%;
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 700;
-}
-a,
-a:visited,
-a:hover {
-	color: #ff0066;
-	text-decoration: none;
-}
-
-body, h1, h2, h3, h4, h5, h6 {
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 700;
-}
-
-
 
 /*******Project Navigation**********/
-
-.btn{
-		color: #ff0066;
-		border-radius: 5px;
-		border: 2px solid #ff0066;
-		padding: 5px;
-	.btn:hover {
-		background: #ff0066;
-		color: white;
-	}
+.project-header {
+	background-color: white; 
 }
+.project-home,
+.project-nav {
+	padding: 0;
+	padding-left: 0;
+	margin: 5px 0 10px 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+.project-home,
+.project-nav {
+	display: inline-block;
+}
+
+.project-nav {
+	text-align: right;
+}
+.project-nav li {
+	display: inline-block;
+	margin-left: 10px;
+
+}
+.project-home a, 
+.project-nav a {
+	display: block;
+	text-align: center;
+	border-radius: 5px;
+	border: 2px solid #ff0066;
+	color: #ff0066;
+	text-decoration: none;
+	padding: 5px 10px;
+}
+
+.btn {
+	color: #ff0066;
+	border-radius: 5px;
+	border: 2px solid #ff0066;
+	padding: 5px; 
+}
+	
+.btn:hover {
+	background-color: #ff0066;
+	color: white;
+}
+
 .btn-call {
-	width: 50%;
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	color: #ff0066;
@@ -48,39 +59,15 @@ body, h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 40px;
 }
 .btn-close {
-	display: block;
-	font-size: 1.25em;
-	margin-left: auto;
-	margin-right: 20px;
-	margin-top: 20px;
-	width: 50px;
-	color: white;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	background-color: grey;
 	border-radius: 5px;
-	border: 2px solid white;
-	padding: 10px;
-	margin-bottom: 40px;
 	a {
+		font-size: 2em;
 		color: white;
+		padding: 10px;
 	}
 }
 
-
-
-
-
-
-
-
-
-@media (min-width: 768px) { 
-
-	/* Main Layout Styles
-	================================ */
-
-	
-	/* Imagery
-	================================ */
-
-	
-
-}

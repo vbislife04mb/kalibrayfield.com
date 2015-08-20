@@ -8,10 +8,7 @@
   },
   "devDependencies": {
     "gulp": "^3.9.0",
-<<<<<<< HEAD
-=======
     "gulp-concat": "^2.6.0",
->>>>>>> navigation
     "gulp-sass": "^2.0.4"
   },
   "scripts": {
