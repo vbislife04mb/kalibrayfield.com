@@ -18,6 +18,7 @@ body {
 	a:visited {
 		color: $pink;
 		text-decoration: none;
+	}
 }
 body, h1, h2, h3, h4, h5, h6 {
 	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -44,27 +45,12 @@ h3 {
 }
 
 .section {
-	padding-top: 90px;
+	padding-top: 60px;
 }
 /*********************************
 			Main Header
 *********************************/
 
-.main-header {
-		display: flex;
-  		flex-direction: row;
-  		justify-content: center;
-		padding: 180px 0px;
-		background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/headerbackground.jpg) no-repeat center center;
-		background-size: cover;	
-	nav {
-		position: fixed;
-		top: 0;
-		width: 100%;
-		background: white;
-		opacity: .9;
-	}
-}
 .main-logo {
 	padding: 5px 0;
 	img {
@@ -103,7 +89,11 @@ h3 {
 		Heading and Social
 *********************************/
 
-.head {	
+.head {
+		width: 100%;
+		height: 500px;
+		background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/headerbackground.jpg) no-repeat center center;
+		background-size: cover;	
 	h1{
 		margin-bottom: 0px;
 	}
@@ -122,10 +112,13 @@ h3 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	width: 275px;
+	img {
+		width: 40px;
 	}
 	img:hover {
 		@include hover;
-		border-radius: 20px;
+		border-radius: 30px;
 	}
 }
 
@@ -180,7 +173,7 @@ h3 {
 		justify-content: center;
 	}
 	img {
-		width: 60px;
+		width: 40px;
 	}
 	p {
 		margin-top: 5px;

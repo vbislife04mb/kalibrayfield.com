@@ -438,93 +438,98 @@ img {
 
 body {
   text-align: center;
-  width: 100%;
-  /*********************************
-			Main Header
-*********************************/
-  /*********************************
-			Main Nav
-*********************************/
-  /*********************************
-		Heading and Social
-*********************************/ }
+  width: 100%; }
   body li {
     list-style: none; }
   body a,
   body a:visited {
     color: #ff0066;
     text-decoration: none; }
-  body body, body h1, body h2, body h3, body h4, body h5, body h6 {
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 16px; }
-  body h1 {
-    font-size: 2.5em; }
-  body h2 {
-    font-size: 2em;
-    color: #ff0066;
-    padding-top: 10px;
-    padding-bottom: 10px; }
-  body h3 {
-    font-size: 1.5em; }
-  body .grid-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  body .section {
-    padding-top: 90px; }
-  body .main-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 180px 0px;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/headerbackground.jpg) no-repeat center center;
-    background-size: cover; }
-    body .main-header nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: white;
-      opacity: .9; }
-  body .main-logo {
-    padding: 5px 0; }
-    body .main-logo img {
-      width: 50px; }
-    body .main-logo img:hover {
-      background: white;
-      opacity: .5;
-      z-index: 100;
-      border-radius: 50px; }
-  body .main-nav {
-    display: flex;
-    justify-content: space-around;
-    list-style: none; }
-    body .main-nav li {
-      padding-bottom: 5px; }
-    body .main-nav h3 {
-      font-size: 1.125em; }
-    body .main-nav li:hover {
-      padding-bottom: 2px;
-      border-bottom: 2px solid #ff0066; }
-  body .head h1 {
-    margin-bottom: 0px; }
-  body .head h3 {
-    font-size: 1.125em;
-    color: #FF0066;
-    margin-bottom: 2px; }
-  body .head h4 {
-    font-size: 1.5em;
-    color: #ff0066;
-    padding-bottom: 10px; }
-  body .social-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-  body img:hover {
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px; }
+
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-size: 2em;
+  color: #ff0066;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+h3 {
+  font-size: 1.5em; }
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.section {
+  padding-top: 60px; }
+
+/*********************************
+			Main Header
+*********************************/
+.main-logo {
+  padding: 5px 0; }
+  .main-logo img {
+    width: 50px; }
+  .main-logo img:hover {
     background: white;
     opacity: .5;
     z-index: 100;
-    border-radius: 20px; }
+    border-radius: 50px; }
+
+/*********************************
+			Main Nav
+*********************************/
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none; }
+  .main-nav li {
+    padding-bottom: 5px; }
+  .main-nav h3 {
+    font-size: 1.125em; }
+  .main-nav li:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #ff0066; }
+
+/*********************************
+		Heading and Social
+*********************************/
+.head {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/headerbackground.jpg) no-repeat center center;
+  background-size: cover; }
+  .head h1 {
+    margin-bottom: 0px; }
+  .head h3 {
+    font-size: 1.125em;
+    color: #FF0066;
+    margin-bottom: 2px; }
+  .head h4 {
+    font-size: 1.5em;
+    color: #ff0066;
+    padding-bottom: 10px; }
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 275px; }
+  .social-icons img {
+    width: 40px; }
+  .social-icons img:hover {
+    background: white;
+    opacity: .5;
+    z-index: 100;
+    border-radius: 30px; }
 
 /*********************************
 			About
@@ -568,7 +573,7 @@ body {
     flex-direction: row;
     justify-content: center; }
   .contact img {
-    width: 60px; }
+    width: 40px; }
   .contact p {
     margin-top: 5px; }
 
