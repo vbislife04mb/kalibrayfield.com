@@ -44,7 +44,7 @@ h3 {
 }
 
 .section {
-	padding-top: 80px;
+	padding-top: 90px;
 }
 /*********************************
 			Main Header
@@ -70,11 +70,12 @@ h3 {
 	img {
 		width: 50px;
 	}
+	& img:hover {
+		@include hover;
+		border-radius: 50px;
+	}
 }
-.main-logo img:hover {
-	@include hover;
-	border-radius: 50px;
-}
+
 
 /*********************************
 			Main Nav
@@ -124,7 +125,7 @@ h3 {
 	}
 	img:hover {
 		@include hover;
-		border-radius: 30px;
+		border-radius: 20px;
 	}
 }
 
