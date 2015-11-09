@@ -42,6 +42,7 @@ $("#addNewColor").click(function(){
   $(".controls ul").append($newColor);
   //Select the new color
   $newColor.click();
+  $('#colorSelect').toggle();
 });
 
 //On mouse events on the canvas

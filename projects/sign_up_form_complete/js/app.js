@@ -31,21 +31,24 @@ function passwordEvent(){
 
 function confirmPasswordEvent() {
   //Find out if password and confirmation match
-  if(arePasswordsMatching()) {
+  if(arePasswordsMatching() && isPasswordValid()) {
     //Hide hint if match
     $confirmPassword.next().hide();
-  } else {
+    $("#submit").css({ "background-color": "green", "box-shadow": "0 3px 0 0 darkgreen" });
+
+    } else {
     //else show hint 
     $confirmPassword.next().show();
   }
 }
+
 
 function enableSubmitEvent() {
   $("#submit").prop("disabled", !canSubmit());
 }
 
 //When event happens on password input
-$password.focus(passwordEvent).keyup(passwordEvent).keyup(confirmPasswordEvent).keyup(enableSubmitEvent);
+$password.focus(passwordEvent).keyup(passwordEvent).keyup(passwordEvent).keyup(enableSubmitEvent);
 
 //When event happens on confirmation input
 $confirmPassword.focus(confirmPasswordEvent).keyup(confirmPasswordEvent).keyup(enableSubmitEvent);

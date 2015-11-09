@@ -1,23 +1,24 @@
+/*********************************
+			Main Body 
+*********************************/
 * {
+	@include no-padding;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
+	/*background-color: rgba(255,0,0,.1);*/
 }
 body {
-	padding: 0;
-	margin-left: 0;
-	margin-right: 0;
 	text-align: center;
 	width: 100%;
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 700;
+	li {
+		list-style: none;
+	}
+	a,
+	a:visited {
+		color: $pink;
+		text-decoration: none;
 }
-a,
-a:visited,
-a:hover {
-	color: #ff0066;
-	text-decoration: none;
-}
-
 body, h1, h2, h3, h4, h5, h6 {
 	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 700;
@@ -28,20 +29,34 @@ h1 {
 }
 h2 {
 	font-size: 2em;
-	color: #ff0066;
+	color: $pink;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 h3 {
 	font-size: 1.5em;
 }
-.section {
-	padding-top: 95px;
+
+.grid-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
+.section {
+	padding-top: 80px;
+}
+/*********************************
+			Main Header
+*********************************/
 
 .main-header {
+		display: flex;
+  		flex-direction: row;
+  		justify-content: center;
 		padding: 180px 0px;
 		background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/headerbackground.jpg) no-repeat center center;
-		background-size: cover;
+		background-size: cover;	
 	nav {
 		position: fixed;
 		top: 0;
@@ -50,47 +65,44 @@ h3 {
 		opacity: .9;
 	}
 }
-
 .main-logo {
-		display: block;
-		margin: 0;
+	padding: 5px 0;
 	img {
-		margin-top: 5px;
 		width: 50px;
 	}
 }
 .main-logo img:hover {
-	background: white;
+	@include hover;
 	border-radius: 50px;
-	opacity: .5;
-	z-index: 100;
 }
+
+/*********************************
+			Main Nav
+*********************************/
+
 .main-nav {
-		margin: 0;
-		padding: 0;
-	ul {
-		height: 30px;
-		padding-top: 0;
-	}
-	li {
-		display: inline-block;
-		margin: 0 8px;
-	}
+  		display: flex;
+  		justify-content: space-around;
+  		list-style: none;
+  	li {
+  		padding-bottom: 5px;
+  	}
 	h3 {
 		font-size: 1.125em;
-		margin: 0;
 	}
-	h3 {
-		margin-top: 0;
-	}
-}
-.main-nav h3:hover {
-	background: white;
-	opacity: .5;
-	z-index: 100;
-}
-.head {
+	& li:hover {
+		padding-bottom: 2px;
+		border-bottom: 2px solid $pink;
 
+	}
+}
+
+
+/*********************************
+		Heading and Social
+*********************************/
+
+.head {	
 	h1{
 		margin-bottom: 0px;
 	}
@@ -101,71 +113,75 @@ h3 {
 	}
 	h4 {
 		font-size: 1.5em;
-		color: #ff0066;
-		margin: 0;
-		
-
+		color: $pink;
+		padding-bottom: 10px;
 	}
 }
 .social-icons {
-		margin: 0;
-		text-align: center;
-		padding: 0;
-	li {
-		display: inline-block;
-		padding: 0 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 	}
-	
+	img:hover {
+		@include hover;
+		border-radius: 30px;
+	}
 }
-.social-icons a:hover {
-	background: white;
-	border-radius: 30px;
-	opacity: .5;
-	z-index: 100;
-}
+
+/*********************************
+			About
+*********************************/
 
 .about {
 	p {
 		text-align: left;
+		text-indent: 50px;
 	}
 	img {
+		border-radius: 20px;
+		width: 50%;
+	}
+}
+
+/*********************************
+			Projects
+*********************************/
+
+.projects {
+	ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	li {
+		width: 48%;
+	}
+	img {
+		border-radius: 20px;
+	}
+	img:hover {
+		@include hover;
 		border-radius: 20px;
 	}
 }
 
-.projects {
-	img {
-		border-radius: 20px;
-	}
-	li {
-		padding-bottom: 10px;
-	}
-}
-.projects a:hover {
-	background: white;
-	opacity: .5;
-	z-index: 100;
-}
+
+/*********************************
+			Contact
+*********************************/
+
 .contact {
+	padding-bottom: 60px;
 	ul {
-		margin: 0;
-		text-align: center;
-		padding: 0;
-	}
-	li {
-		display: inline-block;
-		padding: 0 10px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 	}
 	img {
-		width: 70px;
+		width: 60px;
 	}
 	p {
 		margin-top: 5px;
 	}
-	
-}
-.contact a:hover {
-	background: white;
-	opacity: .5;
-	z-index: 100;
 }
