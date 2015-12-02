@@ -1,74 +1,61 @@
-
-/******* Project Navigation **********/
-
-.project-header {
-	background-color: white; 
-}
-.project-home,
-.project-nav {
-	padding: 0;
-	padding-left: 0;
-	margin: 5px 0 10px 0;
-	text-decoration: none;
-	list-style: none;
-}
-
-.project-home,
-.project-nav {
-	display: inline-block;
-}
-
-.project-nav {
-	text-align: right;
-}
-.project-nav li {
-	display: inline-block;
-	margin-left: 10px;
-
-}
-/******* Project Styles **********/
 * {
+	@include no-padding;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-a {
-	display: block;
-	text-align: center;
-	border-radius: 5px;
-	border: 2px solid $pink;
-	color: $pink;
-	text-decoration: none;
-	padding: 5px 10px;
-}
-.btn {
-	color: $pink;
-	border-radius: 5px;
-	border: 2px solid $pink;
-	padding: 5px; 
-	&:hover {
-		background-color: $pink;
+/******* Project Navigation **********/
+
+.project-main-nav, .nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	a {
+		padding: 5px 0;
+		border: 2px solid $pink;
+		border-radius: 5px;
+	}
+	a:hover {
 		color: white;
+		background-color: $pink;
 	}
 }
 
-.btn-call {
-	@extend .btn;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 10px;
-	margin-bottom: 40px;
+.project-main-nav {
+	margin-top: .5em;
 }
-.btn-close {
-	position: fixed;
-	top: 10px;
-	right: 10px;
-	background-color: grey;
-	border-radius: 5px;
+
+.home {
+	width: 125px;
+	margin-left: 0;
+	margin-right: auto;
+	align-self: center;
+}
+
+.nav {
+	flex-direction: row;
+	justify-content: space-between;
+	align-self: center;
+	li {
+		margin-left: 1em;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
 	a {
-		font-size: 2em;
-		color: white;
-		padding: 10px;
+		padding: 5px 15px;
 	}
 }
+
+.show-demo {
+	margin: 2em 0;
+	width: 100%;
+	padding: 5px 0;
+	border: 2px solid $pink;
+	border-radius: 5px;
+	&:hover {
+		color: white;
+		background-color: $pink;
+	}
+}
+
 
