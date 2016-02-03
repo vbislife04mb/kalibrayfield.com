@@ -2,43 +2,47 @@
 
 		/* Navigation
 		================================ */
-		.main-header {
-		position: fixed;
-		top: 0;
-		width: 100%;
-		height: 55px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		padding-left: 10px;
-		padding-right: 10px;
-		background: white;
+	.main-logo img {
+		width: 70px;
 	}
-	.main-logo {
-		display: inline-block;
-		float: left;
-		margin-top: 0;
-		margin-bottom: 0;
+	.projects li {
+		width: 32%;
 	}
-	.main-logo a, 
-	.main-nav a {
-		text-align: center;
-	}
-	.main-nav {
-			float: right;
-			display: inline-block;
-			text-align: right;
+	.projects {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
 		li {
-			text-align: right;
-			margin-left: 10px;
-			display: inline-block;
+			width: 48%;
+		}
+}
+	.about {
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		li:first-child {
+			width: 32%;
+		}
+		li:last-child {
+			width: 62%;
 		}
 	}
+}
+@media (min-width: 1000px) { 
 
-	.main-content {
-			margin-top: 60px;
-		p {
-			text-align: left;
+		/* Navigation
+		================================ */
+	.projects li {
+		width: 23%;
+	}
+	.about {
+		li:first-child {
+			width: 22%;
+		}
+		li:last-child {
+			width: 74%;
 		}
 	}
-	
 }

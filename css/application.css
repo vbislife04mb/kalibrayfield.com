@@ -477,6 +477,7 @@ h3 {
 .main-logo {
   padding: 5px 0; }
   .main-logo img {
+    padding-top: 5px;
     width: 50px; }
   .main-logo img:hover {
     background: white;
@@ -490,14 +491,18 @@ h3 {
 .main-nav {
   display: flex;
   justify-content: space-around;
-  list-style: none; }
+  list-style: none;
+  align-items: flex-end; }
   .main-nav li {
     padding-bottom: 5px; }
   .main-nav h3 {
     font-size: 1.125em; }
   .main-nav li:hover {
-    padding-bottom: 2px;
+    padding-bottom: 3px;
     border-bottom: 2px solid #ff0066; }
+  .main-nav li:nth-child(3n):hover {
+    padding-bottom: 5px;
+    border-bottom: none; }
 
 /*********************************
 		Heading and Social
@@ -538,9 +543,14 @@ h3 {
   text-align: left;
   text-indent: 50px; }
 
-.about img {
-  border-radius: 20px;
+.about li:first-child {
   width: 50%; }
+
+.about li:last-child {
+  width: 100%; }
+
+.about img {
+  border-radius: 20px; }
 
 /*********************************
 			Projects
@@ -626,4 +636,34 @@ h3 {
     color: white;
     background-color: #ff0066; }
 
-/*@import 'media-queries';*/
+@media (min-width: 768px) {
+  /* Navigation
+		================================ */
+  .main-logo img {
+    width: 70px; }
+  .projects li {
+    width: 32%; }
+  .projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .projects li {
+      width: 48%; }
+  .about ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .about li:first-child {
+    width: 32%; }
+  .about li:last-child {
+    width: 62%; } }
+
+@media (min-width: 1000px) {
+  /* Navigation
+		================================ */
+  .projects li {
+    width: 23%; }
+  .about li:first-child {
+    width: 22%; }
+  .about li:last-child {
+    width: 74%; } }

@@ -54,6 +54,7 @@ h3 {
 .main-logo {
 	padding: 5px 0;
 	img {
+		padding-top: 5px;
 		width: 50px;
 	}
 	& img:hover {
@@ -71,6 +72,7 @@ h3 {
   		display: flex;
   		justify-content: space-around;
   		list-style: none;
+  		align-items: flex-end;
   	li {
   		padding-bottom: 5px;
   	}
@@ -78,9 +80,12 @@ h3 {
 		font-size: 1.125em;
 	}
 	& li:hover {
-		padding-bottom: 2px;
+		padding-bottom: 3px;
 		border-bottom: 2px solid $pink;
-
+	}
+	& li:nth-child(3n):hover {
+		padding-bottom: 5px;
+		border-bottom: none;
 	}
 }
 
@@ -131,9 +136,14 @@ h3 {
 		text-align: left;
 		text-indent: 50px;
 	}
+	li:first-child {
+		width: 50%;
+	}
+	li:last-child {
+		width: 100%;
+	}
 	img {
 		border-radius: 20px;
-		width: 50%;
 	}
 }
 
