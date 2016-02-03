@@ -57,5 +57,34 @@
 		background-color: $pink;
 	}
 }
+.project ul {
+	padding-top: 60px; 
+}
+
+@media (min-width: 768px) { 
+	.project {
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		li {
+			width: 48%;
+		}
+		p {
+			text-align: left;
+		}
+	}
+}
+@media (min-width: 1000px) { 
+	.project {
+		li:first-child {
+			width: 60%;
+		}
+		li:last-child {
+			width: 38%;
+		}
+	}
+}
 
 

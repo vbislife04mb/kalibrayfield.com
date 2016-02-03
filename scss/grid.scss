@@ -2,8 +2,8 @@
 ================================ */
 
 .grid-container {
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -15,10 +15,10 @@ img {
 ================================ */
 
 @media (min-width: 1px) and (max-width: 767px)  {
-	.grid-container > [class^="grid-"] {
+	/*.grid-container > [class^="grid-"] {
 		padding-left: 5px;
 		padding-right: 5px;
-	}
+	}*/
 	.hide-mobile {
 		display: none;
 	}
@@ -32,9 +32,9 @@ img {
 	.grid-container > [class^="grid-"] {
 		float: left;
 		min-height: 1px;
-		padding-left: 10px;
-		padding-right: 10px;
-		margin-left: 2%;
+		/*padding-left: 10px;
+		padding-right: 10px;*/
+		/*margin-left: 2%;*/
 	}
 	.grid-container > [class^="grid-"]:first-child {
 		margin-left: 0;
@@ -46,7 +46,7 @@ img {
 	/* Columns are 65px wide, with 20px gutters
 	=========================================== */
 
-	.grid-1 {
+	/*.grid-1 {
 		width: 6.5%;
 	}
 	.grid-2 {
@@ -81,7 +81,7 @@ img {
 	}
 	.grid-12 {
 		width: 100%;
-	}
+	}*/
 
 	/* Clearfix
 	================================ */

@@ -358,8 +358,8 @@ th {
 /* Global
 ================================ */
 .grid-container {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -369,9 +369,10 @@ img {
 /* Media Queries
 ================================ */
 @media (min-width: 1px) and (max-width: 767px) {
-  .grid-container > [class^="grid-"] {
-    padding-left: 5px;
-    padding-right: 5px; }
+  /*.grid-container > [class^="grid-"] {
+		padding-left: 5px;
+		padding-right: 5px;
+	}*/
   .hide-mobile {
     display: none; } }
 
@@ -381,39 +382,51 @@ img {
   .grid-container > [class^="grid-"] {
     float: left;
     min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 2%; }
+    /*padding-left: 10px;
+		padding-right: 10px;*/
+    /*margin-left: 2%;*/ }
   .grid-container > [class^="grid-"]:first-child {
     margin-left: 0; }
   .grid-container > [class^="grid-"]:last-child {
     float: right; }
   /* Columns are 65px wide, with 20px gutters
 	=========================================== */
-  .grid-1 {
-    width: 6.5%; }
-  .grid-2 {
-    width: 15%; }
-  .grid-3 {
-    width: 23.5%; }
-  .grid-4 {
-    width: 32%; }
-  .grid-5 {
-    width: 40.5%; }
-  .grid-6 {
-    width: 49%; }
-  .grid-7 {
-    width: 57.5%; }
-  .grid-8 {
-    width: 66%; }
-  .grid-9 {
-    width: 74.5%; }
-  .grid-10 {
-    width: 83%; }
-  .grid-11 {
-    width: 91.5%; }
-  .grid-12 {
-    width: 100%; }
+  /*.grid-1 {
+		width: 6.5%;
+	}
+	.grid-2 {
+		width: 15%;
+	}
+	.grid-3 {
+		width: 23.5%;
+	}
+	.grid-4 {
+		width: 32%;
+	}
+	.grid-5 {
+		width: 40.5%;
+	}
+	.grid-6 {
+		width: 49%;
+	}
+	.grid-7 {
+		width: 57.5%;
+	}
+	.grid-8 {
+		width: 66%;
+	}
+	.grid-9 {
+		width: 74.5%;
+	}
+	.grid-10 {
+		width: 83%;
+	}
+	.grid-11 {
+		width: 91.5%;
+	}
+	.grid-12 {
+		width: 100%;
+	}*/
   /* Clearfix
 	================================ */
   .grid-container:after,
@@ -636,6 +649,25 @@ h3 {
     color: white;
     background-color: #ff0066; }
 
+.project ul {
+  padding-top: 60px; }
+
+@media (min-width: 768px) {
+  .project ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .project li {
+    width: 48%; }
+  .project p {
+    text-align: left; } }
+
+@media (min-width: 1000px) {
+  .project li:first-child {
+    width: 60%; }
+  .project li:last-child {
+    width: 38%; } }
+
 @media (min-width: 768px) {
   /* Navigation
 		================================ */
@@ -643,12 +675,6 @@ h3 {
     width: 70px; }
   .projects li {
     width: 32%; }
-  .projects {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-    .projects li {
-      width: 48%; }
   .about ul {
     display: flex;
     flex-direction: row;
