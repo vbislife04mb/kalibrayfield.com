@@ -1,0 +1,7 @@
+$primary: #ff0066;
+
+@mixin hover {
+	background: white;
+	opacity: .5;
+	z-index: 100;
+}
